@@ -1,0 +1,17 @@
+
+<suite parallel="tests" name="Suite">
+  <test name="TestChrome">
+  <parameter name="node" value="http://192.168.29.1:4441/wd/hub"/>
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="seleniumgrid.Selenium_grid_project"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="TestFirefox">
+  <parameter name="node" value="http://192.168.29.1:4441/wd/hub"/>
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="seleniumgrid.Selenium_grid_project"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

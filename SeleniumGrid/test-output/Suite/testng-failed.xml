@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <parameter name="node" value="http://192.168.29.1:4441/wd/hub"/>
+  <parameter name="browser" value="firefox"/>
+  <test parallel="tests" name="TestFirefox(failed)">
+    <parameter name="node" value="http://192.168.29.1:4441/wd/hub"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="seleniumgrid.Selenium_grid_project">
+        <methods>
+          <include name="TestActiTime" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- seleniumgrid.Selenium_grid_project -->
+    </classes>
+  </test> <!-- TestFirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
